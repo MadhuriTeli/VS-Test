@@ -1,5 +1,5 @@
 // submit.js
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Button } from "primereact/button";
 import { useStore } from "./store";
 import { Toast } from "primereact/toast";
@@ -11,8 +11,8 @@ export const SubmitButton = () => {
 
   const submitPipeline = async () => {
     const data = {
-      nodes: nodes, // Replace with actual nodes data
-      edges: edges, // Replace with actual edges data
+      nodes: nodes, 
+      edges: edges, 
     };
 
     const response = await axios.post(`/pipelines/parse`, data, {
