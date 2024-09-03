@@ -64,9 +64,8 @@ export const PipelineUI = () => {
           const reactFlowBounds = reactFlowWrapper.current.getBoundingClientRect();
           if (event?.dataTransfer?.getData('application/reactflow')) {
             const appData = JSON.parse(event.dataTransfer.getData('application/reactflow'));
-            console.log(appData)
             const type = appData?.nodeType;
-            console.log(type)
+      
             // check if the dropped element is valid
             if (typeof type === 'undefined' || !type) {
               return;

@@ -4,7 +4,6 @@ import { Handle, Position } from 'reactflow';
 import { Card } from "primereact/card";
 
 export const LLMNode = ({ id, data }) => {
-  console.log("id", id)
 
   return (
     <Card title="LLM">
